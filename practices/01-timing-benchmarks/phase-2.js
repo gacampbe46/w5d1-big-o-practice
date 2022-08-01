@@ -13,10 +13,6 @@ function addNums10(increment) {
   return myArr                // return the array filled with all nums
 }
 
-sums = addNums10(10)
-
-console.log(sums)
-
 // Runs `addManyNums` in 10 increasing increments
 function addManyNums10(increment) {
   // Fill this in
