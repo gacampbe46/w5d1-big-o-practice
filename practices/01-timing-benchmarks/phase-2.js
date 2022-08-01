@@ -2,18 +2,15 @@ const [addNums, addManyNums] = require("./phase-1");
 
 // Runs `addNums` in 10 increasing increments
 function addNums10(increment) {
-  let myArr = []
-  let i = increment
-  let counter = 0
-  while (counter < 10) {
-    myArr.push(addNums(i));
-    i += i
-    counter++
+  let myArr = []              // initialize empty array to store 10 increments
+  let i = increment           // create a variable to store current increment
+  let counter = 0             // initialize a counter to count 10x
+  while (counter < 10) {      // loop 10x
+    myArr.push(addNums(i));   // push the the 'addNums' result of 'i'
+    i += increment;           // add 10 to 'i'
+    counter++;                // increment the counter by 1
   }
-  // for (let i = 1; i <= 10; i += increment){
-  //   myArr.push(addNums(i))
-  // }
-  return myArr
+  return myArr                // return the array filled with all nums
 }
 
 sums = addNums10(10)
